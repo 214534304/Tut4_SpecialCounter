@@ -10,9 +10,9 @@ private:
 	bool state;
 
 public:
-	void setOtherValues();               //function prototype
+	void setOtherValues(int,int,bool);               //function prototype
 
-	SpecialCounter();
+	SpecialCounter(int a,int b,bool c);
 	~SpecialCounter();
 };
 
