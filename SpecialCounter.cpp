@@ -1,21 +1,23 @@
 #include "SpecialCounter.h"
+#include <iostream>
 
-int step = 1;
-void SpecialCounter::setOtherValues(int x, int y,bool z){
+using namespace std; 
+
+void SpecialCounter::setOtherValues(int x, int y,int z){
 	LowerBound = x;
 	UpperBound = y;
-	state = z;
+	step = z;
 
 	for (int i = LowerBound; i < UpperBound; i = i + step){
-
+		cout << i << endl;
 	}
 }
 
-SpecialCounter::SpecialCounter(int d,int e, bool f)
+SpecialCounter::SpecialCounter(int d,int e, int f)
 {
 	LowerBound = d;
 	UpperBound = e;
-	state = f;
+	step= f;
 }
 
 

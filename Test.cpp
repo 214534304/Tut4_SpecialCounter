@@ -5,6 +5,7 @@ using namespace std;
 
 int main(){
 
-	SpecialCounter counter1(21, 204, true);   //initilise my object
-
+	SpecialCounter counter1(0, 225, 1);   //initilise my object
+	
+	counter1.setOtherValues;
 }

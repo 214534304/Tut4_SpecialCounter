@@ -7,12 +7,12 @@ class SpecialCounter
 private:
 	int LowerBound;
 	int UpperBound;
-	bool state;
+	int step;
 
 public:
-	void setOtherValues(int,int,bool);               //function prototype
+	void setOtherValues(int,int,int);               //function prototype
 
-	SpecialCounter(int a,int b,bool c);
+	SpecialCounter(int ,int ,int );
 	~SpecialCounter();
 };
 
