@@ -1,7 +1,7 @@
 #include "SpecialCounter.h"
 #include <iostream>
 
-SpecialCounter::SpecialCounter(int l = 0, int u = 255 , int s = 1)
+SpecialCounter::SpecialCounter(int l = 0, int u = 255 , int s = 1)   //constructor
 {
 	Lower = l;
 	Upper = u;
@@ -32,7 +32,7 @@ SpecialCounter& SpecialCounter::operator--(){
 SpecialCounter& SpecialCounter::operator++(int){
 	while (Lower < Upper){
 		std::cout << Lower << std::endl;
-		if (Lower <= Upper)  Lower += step;
+		if (Lower <= Upper)  Lower += step;       //this condition makes sure we get values less and equal to Upperlimit
 	}
 	return *this;
 }

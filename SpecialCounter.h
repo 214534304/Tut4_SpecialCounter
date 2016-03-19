@@ -6,11 +6,11 @@ class SpecialCounter
 public:
 	SpecialCounter(int,int,int);
 	~SpecialCounter();
-	SpecialCounter& operator++();
+	SpecialCounter& operator++();     //overloading increment
 	SpecialCounter& operator--();
-	SpecialCounter& operator++(int);
+	SpecialCounter& operator++(int);   //overloading decrement
 	SpecialCounter& operator--(int);
-	int getNum();
+	
 
 private:
 	int Lower;

@@ -3,17 +3,17 @@
 using namespace std;
 
 int main(){
-	void menu1();
+	void menu1();  //function declaration
 	void menu2();
 	int option;
 	int mode;
 
-	menu1();
+	menu1();   //calling menu 1
 	cin >> mode;
 	cout << endl;
 
 	if (mode == 1){
-		menu2();
+		menu2();     //calling me2
 		cin >> option;
 		cout << endl;
 		if (option == 1){
@@ -59,7 +59,7 @@ int main(){
 }
 
 void menu1(){
-	cout << "1. Prefix" << endl;
+	cout << "1. Prefix" << endl;          //prompt the user
 	cout << "2. Postfix" << endl;
 }
 
