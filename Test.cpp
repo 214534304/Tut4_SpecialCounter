@@ -1,11 +1,10 @@
 #include "SpecialCounter.h"
 #include <iostream>
-
 using namespace std;
 
 int main(){
-
-	SpecialCounter counter1(0, 225, 1);   //initilise my object
+	SpecialCounter obj(0, 255, true);
+	++obj;
 	
-	counter1.setOtherValues;
+	return 0;
 }

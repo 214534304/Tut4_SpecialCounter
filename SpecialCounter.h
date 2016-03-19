@@ -1,18 +1,17 @@
-#pragma once
-#include <iostream>
+#ifndef SPECIALCOUNTER_H
+#define SPECIALCOUNTER_H
 
-using namespace std;
 class SpecialCounter
 {
-private:
-	int LowerBound;
-	int UpperBound;
-	int step;
-
 public:
-	void setOtherValues(int,int,int);               //function prototype
-
-	SpecialCounter(int ,int ,int );
+	SpecialCounter(int,int,bool);
 	~SpecialCounter();
-};
+	SpecialCounter& operator++();
+	int getNum();
 
+private:
+	int Lower;
+	int Upper;
+	bool mode;
+};
+#endif

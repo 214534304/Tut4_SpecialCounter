@@ -10,6 +10,13 @@
       <Platform>Win32</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="SpecialCounter.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="SpecialCounter.cpp" />
+    <ClCompile Include="Test.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{E0AB7D8A-9A8A-4A01-88CC-01279B93879E}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
@@ -75,13 +82,6 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClInclude Include="SpecialCounter.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="SpecialCounter.cpp" />
-    <ClCompile Include="Test.cpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

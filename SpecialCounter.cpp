@@ -1,26 +1,26 @@
 #include "SpecialCounter.h"
 #include <iostream>
 
-using namespace std; 
-
-void SpecialCounter::setOtherValues(int x, int y,int z){
-	LowerBound = x;
-	UpperBound = y;
-	step = z;
-
-	for (int i = LowerBound; i < UpperBound; i = i + step){
-		cout << i << endl;
-	}
-}
-
-SpecialCounter::SpecialCounter(int d,int e, int f)
+SpecialCounter::SpecialCounter(int l = 0, int u = 255 , bool m=true)
 {
-	LowerBound = d;
-	UpperBound = e;
-	step= f;
+	Lower = l;
+	Upper = u;
+	mode = m;
 }
-
 
 SpecialCounter::~SpecialCounter()
 {
 }
+//Prefix increment
+SpecialCounter& SpecialCounter::operator++(){
+
+	while (Lower < Upper){
+		std::cout << ++Lower << std::endl;
+	}
+		
+
+
+
+	return *this;
+}
+
